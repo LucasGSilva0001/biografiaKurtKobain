@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:wght@500&display=swap');
+
+:root{
+    --primary-color: rgb(43,45,48);
+    --secundary-color: rgb(240,227,51);
+    --tertiary-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-size: 35px;
+    color: var(--tertiary-color);
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.cabecalho{
+    border: 2px solid;
+    align-items: center;
+    border-color: var(--secundary-color);
+    background-color: var(--secundary-color);
+}
+
+.cabecalho__albuns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20pt;
+}
+
+.cabecalho__albuns__links{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.albuns__titulo{
+    text-align: center;
+    color: var(--secundary-color);
+    font-family: 'Raleway', sans-serif;
+    padding: 10pt;
+}
+
+.albuns__introducao{
+    padding-left: 80pt;
+    padding-right: 80pt;
+    padding-top: 30pt;
+    padding-bottom: 50pt;
+}
+
+.album__nome{
+    color: var(--secundary-color);
+    font-family: 'Raleway', sans-serif;
+    padding: 10pt;
+    text-align: center;
+}
+
+.bleach{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100pt;
+    padding-bottom: 200pt;
+}
+
+.nevermind{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100pt;
+    padding-bottom: 200pt;
+}
+
+.in__utero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    padding-bottom: 200pt;
+}
+
+.rodape__albuns{
+    border: 2px solid;
+    border-color: var(--secundary-color);
+    background-color: var(--secundary-color);
+    align-items: center;
+}
+
+.conteudo__rodape__albuns{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20pt;
+    color: var(--primary-color);
+}
+
+.rodape__links{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media(max-width: 900px){
+    body{
+        font-size: 20px;
+    }
+    .cabecalho__albuns__links{
+        font-size: 20px;
+    }
+    .titulo__albuns{
+        font-size: 40px;
+    }
+    .albuns__introducao{
+        padding-left: 20pt;
+        padding-right: 20pt;
+    }
+    .bleach{
+        flex-direction: column;
+        padding-left: 10pt;
+        align-items: baseline;
+    }
+    .nevermind{
+        flex-direction: column;
+        padding-left: 10pt;
+        align-items: baseline;
+    }
+    .in__utero{
+        flex-direction: column;
+        padding-left: 10pt;
+        align-items: baseline;
+    }
+}

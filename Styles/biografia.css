@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:wght@500&display=swap');
+
+:root{
+    --primary-color: rgb(43,45,48);
+    --secundary-color: rgb(240,227,51);
+    --tertiary-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-size: 35px;
+    color: var(--tertiary-color);
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.cabecalho{
+    border: 2px solid;
+    align-items: center;
+    border-color: var(--secundary-color);
+    background-color: var(--secundary-color);
+}
+
+.cabecalho__bio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20pt;
+}
+
+.cabecalho__bio__links{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.titulo__bio{
+    text-align: center;
+    color: var(--secundary-color);
+    font-family: 'Raleway', sans-serif;
+    padding: 10pt;
+}
+
+.bio__kurt{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 100pt;
+}
+
+.bio__kurt2{
+    padding-bottom: 40pt;
+    padding-left: 60pt;
+    padding-right: 80pt;
+}
+
+.texto__bio{
+    padding-left: 60pt;
+    padding-right: 80pt;
+}
+
+.rodape__bio{
+    border: 2px solid;
+    border-color: var(--secundary-color);
+    background-color: var(--secundary-color);
+    align-items: center;
+}
+
+.conteudo__rodape__bio{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20pt;
+    color: var(--primary-color);
+}
+
+.rodape__links{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media(max-width: 900px){
+    body{
+        font-size: 20px;
+    }
+    .cabecalho__bio__links{
+        font-size: 20px;
+    }
+    .titulo__bio{
+        font-size: 40px;
+    }
+    .bio__kurt{
+        flex-direction: column;
+        padding-left: 10pt;
+    }
+    .img{
+        width: 400px;
+        padding-left: 10pt;
+    }
+    .texto__bio{
+        padding-left: 10pt;
+        padding-right: 20pt;
+    }
+    .bio__kurt2{
+        padding-left: 20pt;
+        padding-right: 20pt;
+    }
+}
